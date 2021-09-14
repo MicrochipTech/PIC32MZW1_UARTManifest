@@ -10,7 +10,7 @@ The firmware recieves commands over UART and responds with the corresponding dat
 
 The FW has commands to fetch the information stored in the TNGTLS slots as well as the sha256 of the data sent over UART. This message hash can be used to verify the sanity of the information recieved over UART. 
 
-FW commands include:
+FW commands:
 
 ```
 1. getserial
