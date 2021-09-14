@@ -4,6 +4,8 @@ The WFI32E01 module on the curiosity board has an on-board TNG module. The prima
 
 Follow these steps to generate the manifest file of a curiosity board running the FW available in this repository:
 
+> ***Note:*** you can either compile the firmware from the [sources](../../../../tree/main/src/firmware) or download the hex file from the [releases tab](https://github.com/MicrochipTech/PIC32MZW1_UARTManifest/releases)
+
 - Clone this repo to your PC.
 - Make sure that you have python 3 installed in your PC
 - Install python dependencies from the `requirements.txt` file in this scripts folder. 
