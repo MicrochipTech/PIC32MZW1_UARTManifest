@@ -783,13 +783,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 65B06844C05EFFE53432315B6C28B5C5
-- generatedChecksum: 3A4D0915FECF071E6DD178889D1BEF42
+- generatedChecksum: 72BFBEF46060ABBF846FB7A3B2C667E4
   logicalPath: config/pic32mzw1_Curiosity/peripheral/uart
   name: plib_uart1.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3A4D0915FECF071E6DD178889D1BEF42
+  userChecksum: 72BFBEF46060ABBF846FB7A3B2C667E4
 - generatedChecksum: C887913E7F045D65EF8FA7362D0DFDD8
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: port.c

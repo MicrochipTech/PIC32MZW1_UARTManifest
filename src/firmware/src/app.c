@@ -64,12 +64,9 @@ uint8_t devicePubKey_hash[SHA256_DIGEST_SIZE] = {0};
 uint8_t rootCert_hash[SHA256_DIGEST_SIZE] = {0};
 uint8_t signerCert_hash[SHA256_DIGEST_SIZE] = {0};
 uint8_t deviceCert_hash[SHA256_DIGEST_SIZE] = {0};
-size_t rootCertSize = 0;
-size_t signerCertSize = 0;
-size_t deviceCertSize = 0;
 
 void _APP_Commands_GetStatus(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
-    SYS_CONSOLE_PRINT("0x%x\r\n", stat);
+    SYS_CONSOLE_PRINT("%02x\r\n", stat);
 }
 
 void _APP_Commands_GetSerial(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
@@ -143,11 +140,11 @@ void _APP_Commands_GetKey(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
 
         if (NULL != element) {
             for (int i = 0; i < ATCA_PUB_KEY_SIZE; i++) {
-                SYS_CONSOLE_PRINT("%02x,", element[i]);
+                SYS_CONSOLE_PRINT("%02x ", element[i]);
             }
         } else {
             for (int i = 0; i < ATCA_PUB_KEY_SIZE; i++) {
-                SYS_CONSOLE_PRINT("0x00,");
+                SYS_CONSOLE_PRINT("00 ");
             }
         }
         SYS_CONSOLE_PRINT("\r\n");
@@ -197,12 +194,13 @@ void _APP_Commands_GetHash(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
     }
     if (NULL != element) {
         for (int i = 0; i < SHA256_DIGEST_SIZE; i++) {
-            SYS_CONSOLE_PRINT("%02x", element[i]);
+            SYS_CONSOLE_PRINT("%02x ", element[i]);
         }
     }
     SYS_CONSOLE_PRINT("\r\n");
 }
 
+#if 0
 void _APP_Commands_GetSize(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
     size_t retSize = 0;
     if (argc == 2) {
@@ -243,20 +241,28 @@ void _APP_Commands_GetSize(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
             default:
                 break;
         }
-        SYS_CONSOLE_PRINT("0x%x\r\n", retSize);
+        SYS_CONSOLE_PRINT("%02x\r\n", retSize);
     }
 }
+#endif 
 
 void _APP_Commands_GetCert(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
     uint8_t *element = 0;
     size_t elemSize = 0;
+    size_t rootCertSize = 0;
+    size_t signerCertSize = 0;
+    size_t deviceCertSize = 0;
+    uint8_t *rootCert=NULL;
+    uint8_t *signerCert=NULL;
+    uint8_t *deviceCert=NULL;
+    
     if (argc == 2) {
         switch (*argv[1]) {
             case '0':
                 status = tng_atcacert_root_cert_size(&rootCertSize);
                 if (ATCA_SUCCESS == status) {
-                    uint8_t rootCert[rootCertSize];
-                    status = tng_atcacert_root_cert((uint8_t*) & rootCert, &rootCertSize);
+                    rootCert=(uint8_t*)malloc(rootCertSize);
+                    status = tng_atcacert_root_cert(rootCert, &rootCertSize);
                     if (ATCA_SUCCESS == status) {
                         atcah_sha256(rootCertSize, rootCert, rootCert_hash);
                         element = rootCert;
@@ -267,8 +273,8 @@ void _APP_Commands_GetCert(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
             case '1':
                 status = tng_atcacert_max_signer_cert_size(&signerCertSize);
                 if (ATCA_SUCCESS == status) {
-                    uint8_t signerCert[signerCertSize];
-                    status = tng_atcacert_read_signer_cert((uint8_t*) & signerCert, &signerCertSize);
+                    signerCert=(uint8_t*)malloc(signerCertSize);
+                    status = tng_atcacert_read_signer_cert(signerCert, &signerCertSize);
                     if (ATCA_SUCCESS == status) {
                         atcah_sha256(signerCertSize, signerCert, signerCert_hash);
                         element = signerCert;
@@ -280,13 +286,13 @@ void _APP_Commands_GetCert(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
                 /*Read signer cert*/
                 status = tng_atcacert_max_signer_cert_size(&signerCertSize);
                 if (ATCA_SUCCESS == status) {
-                    uint8_t signerCert[signerCertSize];
-                    status = tng_atcacert_read_signer_cert((uint8_t*) & signerCert, &signerCertSize);
+                    signerCert=(uint8_t*)malloc(signerCertSize);
+                    status = tng_atcacert_read_signer_cert(signerCert, &signerCertSize);
                     if (ATCA_SUCCESS == status) {
                         status = tng_atcacert_max_device_cert_size(&deviceCertSize);
                         if (ATCA_SUCCESS == status) {
-                            uint8_t deviceCert[deviceCertSize];
-                            status = tng_atcacert_read_device_cert((uint8_t*) & deviceCert, &deviceCertSize, (uint8_t*) & signerCert);
+                            deviceCert=(uint8_t*)malloc(deviceCertSize);
+                            status = tng_atcacert_read_device_cert(deviceCert, &deviceCertSize, signerCert);
                             if (ATCA_SUCCESS == status) {
                                 atcah_sha256(deviceCertSize, deviceCert, deviceCert_hash);
                                 element = deviceCert;
@@ -300,9 +306,12 @@ void _APP_Commands_GetCert(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
                 break;
         }
         for (int i = 0; i < elemSize; i++) {
-            SYS_CONSOLE_PRINT("%02x,", element[i]);
+            SYS_CONSOLE_PRINT("%02x ", element[i]);
         }
         SYS_CONSOLE_PRINT("\r\n");
+        free(rootCert);
+        free(signerCert);
+        free(deviceCert);
     }
 }
 
@@ -312,7 +321,7 @@ static const SYS_CMD_DESCRIPTOR appCmdTbl[] = {
     {"getserial", _APP_Commands_GetSerial, ": get Serial"},
     {"getkey", _APP_Commands_GetKey, ": get parameter key"},
     {"gethash", _APP_Commands_GetHash, ": get parameter hash"},
-    {"getsize", _APP_Commands_GetSize, ": get cert size"},
+    //{"getsize", _APP_Commands_GetSize, ": get cert size"},
     {"getcert", _APP_Commands_GetCert, ": get cert"},
 };
 

@@ -713,6 +713,11 @@
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
       </Tool>
+      <pk4hybrid>
+        <property key="memories.programmemory.ranges" value="10000000-100fffff"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/temp/uartManifest/PIC32MZW1_UARTManifest/src/firmware/usrtManifest.X/debug/pic32mzw1_Curiosity/usrtManifest_ptg"/>
+      </pk4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>
