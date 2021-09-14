@@ -17,11 +17,14 @@ Follow these steps to generate the manifest file of a curiosity board running th
     > ***Note:*** you can either compile the firmware from the [sources](../../../../tree/main/src/firmware) or download the hex file from the [releases tab](https://github.com/MicrochipTech/PIC32MZW1_UARTManifest/releases)
 
 1. Connect UART1 to the PC using a USB to UART converter. Make sure that you dont open a terminal but make a note of the COM port.
-1. Execute the following commands from the cloned repo. Make sure that the correct COM port is passed to the script.
+1. Execute the following commands from the cloned repo. 
     ```sh
     cd scripts\ManifestProcessing
     python createManifest_uart.py -c COM3
     ```
+    
+    > ***Note***: Make sure that the correct COM port is passed to the script.
+    
 1. A manifest file with the device serial number prefix will be generated in the scripts folder.
 1. Store the `json` file as well as the `log_signer` certificate.
     - `log_signer` certificate is a self signed certificate used to sign the manifest. This is essential to validate the authenticity of the manifest file during device registration.
