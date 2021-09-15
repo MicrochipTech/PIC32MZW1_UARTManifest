@@ -45,14 +45,17 @@ def load_or_create_key(filename):
 
 def load_key_and_cert(key_file, cert_file):
     """Attemps to load a key and certificate and return the corresponding cryptography object"""
-    with open(cert_file, 'rb') as f:
-        cert = x509.load_pem_x509_certificate(f.read(), default_backend())
+    try:
+        with open(cert_file, 'rb') as f:
+            cert = x509.load_pem_x509_certificate(f.read(), default_backend())
 
-    with open(key_file, 'rb') as f:
-        key = serialization.load_pem_private_key(f.read(), None, backend=default_backend())
+        with open(key_file, 'rb') as f:
+            key = serialization.load_pem_private_key(f.read(), None, backend=default_backend())
 
-    return key, cert
-
+        return key, cert
+    except Exception as e:
+        print(e)
+        return None, None
 
 def random_cert_sn(size):
     """Create a positive, non-trimmable serial number for X.509 certificates"""
@@ -70,6 +73,11 @@ def create_log_signer(log_key_path='manifest_signer.key', log_cert_path='manifes
     entries. This is an example as a production manifest will always be signed by a Microchip
     signing certificate.
     """
+
+    #check if a loadable cert and key is already present
+    key,cert=load_key_and_cert(log_key_path,log_cert_path)
+    if None not in (key,cert):
+        return
 
     # Create or load a root CA key pair
     print('Loading logger key')
@@ -109,9 +117,6 @@ def create_log_signer(log_key_path='manifest_signer.key', log_cert_path='manifes
     with open(log_cert_path, 'wb') as f:
         print('    Saving to ' + f.name)
         f.write(log_cert_data)
-
-    return log_cert_data
-
 
 def create_signed_entry(entry, log_key, jws_header):
     """

@@ -25,7 +25,7 @@ Manifest generation
 import unicodedata
 import re
 from cryptography.hazmat.primitives.serialization import Encoding, PublicFormat
-from cryptography.utils import int_from_bytes
+#from cryptography.utils import int_from_bytes
 from cryptoauthlib import *
 from common import *
 from jose import utils
@@ -93,8 +93,8 @@ def tng_data(log_key_path='manifest_signer.key', log_cert_path='manifest_signer.
 
     root_public_key = ec.EllipticCurvePublicNumbers(
         curve=ec.SECP256R1(),
-        x=int_from_bytes(root_public_key_raw[0:32], byteorder='big'),
-        y=int_from_bytes(root_public_key_raw[32:64], byteorder='big'),
+        x=int.from_bytes(root_public_key_raw[0:32], byteorder='big'),
+        y=int.from_bytes(root_public_key_raw[32:64], byteorder='big'),
     ).public_key(default_backend())
 
     # Prove that cert public key and the public key from the func are the same
@@ -141,8 +141,8 @@ def tng_data(log_key_path='manifest_signer.key', log_cert_path='manifest_signer.
 
     signer_public_key = ec.EllipticCurvePublicNumbers(
         curve=ec.SECP256R1(),
-        x=int_from_bytes(signer_public_key_raw[0:32], byteorder='big'),
-        y=int_from_bytes(signer_public_key_raw[32:64], byteorder='big'),
+        x=int.from_bytes(signer_public_key_raw[0:32], byteorder='big'),
+        y=int.from_bytes(signer_public_key_raw[32:64], byteorder='big'),
     ).public_key(default_backend())
 
     # Prove that cert public key and the public key from the func are the same
@@ -192,8 +192,8 @@ def tng_data(log_key_path='manifest_signer.key', log_cert_path='manifest_signer.
 
     device_public_key = ec.EllipticCurvePublicNumbers(
         curve=ec.SECP256R1(),
-        x=int_from_bytes(device_public_key_raw[0:32], byteorder='big'),
-        y=int_from_bytes(device_public_key_raw[32:64], byteorder='big'),
+        x=int.from_bytes(device_public_key_raw[0:32], byteorder='big'),
+        y=int.from_bytes(device_public_key_raw[32:64], byteorder='big'),
     ).public_key(default_backend())
 
     # Prove that cert public key and the public key from the func are the same
