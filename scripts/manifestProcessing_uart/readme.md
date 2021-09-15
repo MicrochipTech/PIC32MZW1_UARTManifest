@@ -26,5 +26,5 @@ Follow these steps to generate the manifest file of a curiosity board running th
     > ***Note***: Make sure that the correct COM port is passed to the script.
     
 1. A manifest file with the device serial number prefix will be generated in the scripts folder.
-1. Store the `json` file as well as the `log_signer` certificate.
-    - `log_signer` certificate is a self signed certificate used to sign the manifest. This is essential to validate the authenticity of the manifest file during device registration.
+1. Store the `json` file as well as the `manifest_signer` certificate.
+    - `manifest_signer` certificate is a self signed certificate used to sign the manifest. This is essential to validate the authenticity of the manifest file during device registration.
