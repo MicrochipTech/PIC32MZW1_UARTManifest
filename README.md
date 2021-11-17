@@ -6,7 +6,7 @@ Read execution instructions at [scripts/manifestProcessing_uart/readme.md](scrip
 
 ## What does the firmware do?
 
-The firmware recieves commands over UART and responds with the corresponding data fetched from the TNGTLS attached on I2C2 interface of PIC32MZW1 / WFI32. 
+The firmware recieves commands over UART (***230400 8N1***) and responds with the corresponding data fetched from the TNGTLS attached on I2C2 interface of PIC32MZW1 / WFI32. 
 
 The FW has commands to fetch the information stored in the TNGTLS slots as well as the sha256 of the data sent over UART. This message hash can be used to verify the sanity of the information recieved over UART. 
 
