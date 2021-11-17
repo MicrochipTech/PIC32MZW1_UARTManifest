@@ -27,9 +27,9 @@ FW commands:
     6 : signer Public key
     7 : device Public key
 4. getcert <n>
-    1 : root certificate
-    2 : signer certificate
-    3 : device certificate
+    0 : root certificate
+    1 : signer certificate
+    2 : device certificate
 5. gethash <n>
     0 : Slot0 key hash
     1 : Slot1 key hash
