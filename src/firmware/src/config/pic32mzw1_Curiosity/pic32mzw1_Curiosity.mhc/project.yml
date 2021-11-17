@@ -20,13 +20,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
-- generatedChecksum: 96BD063F9F731E18A5F1CBB036A40130
+- generatedChecksum: 444781ED6E666671B8BDEE5918176A8E
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_basic.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 96BD063F9F731E18A5F1CBB036A40130
+  userChecksum: 444781ED6E666671B8BDEE5918176A8E
 - generatedChecksum: 6E4CBB332534E51810441984EF645DCC
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_basic.h
@@ -41,13 +41,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7A3C7433D5B1A51B74A8924E342D644E
-- generatedChecksum: E9C2B617C839A6C3463074188AB168B0
+- generatedChecksum: 2DBDFFD8728C4D1D8E369A076C3B357E
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_cfgs.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E9C2B617C839A6C3463074188AB168B0
+  userChecksum: 2DBDFFD8728C4D1D8E369A076C3B357E
 - generatedChecksum: F0BFA9CA8C736ED732A529954EBB4CAE
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_cfgs.h
@@ -55,13 +55,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F0BFA9CA8C736ED732A529954EBB4CAE
-- generatedChecksum: 438BE57ED488CFF75E81BAEDD0F20BA6
+- generatedChecksum: 3385E1FBFBCD5667C4CAB333B9B6F070
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_compiler.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 438BE57ED488CFF75E81BAEDD0F20BA6
+  userChecksum: 3385E1FBFBCD5667C4CAB333B9B6F070
 - generatedChecksum: 8500092E7EA1EB920BF9E9DDFF2038F7
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes.h
@@ -76,27 +76,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 65171793E500AE687BC8CCD3C6049D31
-- generatedChecksum: 4D0E47CEBD07FD982465D42A55DDEFFE
+- generatedChecksum: B44E7013BDEBA9ADA498AC9F61109FFA
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_cbcmac.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4D0E47CEBD07FD982465D42A55DDEFFE
-- generatedChecksum: B674D95DED12D3239D9B2D31C3A8504A
+  userChecksum: B44E7013BDEBA9ADA498AC9F61109FFA
+- generatedChecksum: 923D43EF28A3288C01012E1CC37326C0
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_ccm.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B674D95DED12D3239D9B2D31C3A8504A
-- generatedChecksum: 139F2FA958373139D344DB282F2F359B
+  userChecksum: 923D43EF28A3288C01012E1CC37326C0
+- generatedChecksum: 2B8A1F34423F806543F302408266CD54
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_cmac.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 139F2FA958373139D344DB282F2F359B
+  userChecksum: 2B8A1F34423F806543F302408266CD54
 - generatedChecksum: 2524D72F7A43204248272C0893543EB7
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_ctr.c
@@ -111,13 +111,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 16B6D66A2EDABDACD74461AEF7450F00
-- generatedChecksum: 7C762D60F610163BBEBD98A0C1718728
+- generatedChecksum: D158412AE4C69A095BE6D235131E5B8D
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_sw.h
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7C762D60F610163BBEBD98A0C1718728
+  userChecksum: D158412AE4C69A095BE6D235131E5B8D
 - generatedChecksum: B5EA343D1BC163882E441D84DFFB506F
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto
   name: atca_crypto_sw_ecdsa.c
@@ -209,27 +209,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7106109F765A6B18291B237D7A2F5CC4
-- generatedChecksum: 4FF641D059957586ACEE5A1E5ECE84C9
+- generatedChecksum: 5B860734C7D386817AC298E2A7ADEE1F
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/hal
   name: atca_hal.c
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4FF641D059957586ACEE5A1E5ECE84C9
-- generatedChecksum: 19B31AF4FFE670CFA25AAD8CA7EDC2B2
+  userChecksum: 5B860734C7D386817AC298E2A7ADEE1F
+- generatedChecksum: 6B08E62A8B85368F79DCBDC6A9A6BFCA
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/hal
   name: atca_hal.h
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 19B31AF4FFE670CFA25AAD8CA7EDC2B2
-- generatedChecksum: EAAF448A85A5BF54F4A9B7C763F4CDAF
+  userChecksum: 6B08E62A8B85368F79DCBDC6A9A6BFCA
+- generatedChecksum: E77FDC98556646364B018E2A2468849F
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_helpers.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EAAF448A85A5BF54F4A9B7C763F4CDAF
+  userChecksum: E77FDC98556646364B018E2A2468849F
 - generatedChecksum: 4C7F2D4E1754F7D33CADFA1724B68939
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_helpers.h
@@ -251,27 +251,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6E89F7C656132778C623E58EEB5CBB73
-- generatedChecksum: DE65EC3191DC7CC3897CA000345948A9
+- generatedChecksum: CDCE0CE7DDF817D810F57F3459CA1DEF
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_iface.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DE65EC3191DC7CC3897CA000345948A9
-- generatedChecksum: 64B241948B4A11E17E998D241B918D2D
+  userChecksum: CDCE0CE7DDF817D810F57F3459CA1DEF
+- generatedChecksum: EB8A484DE63DD14D6E96A05BC0E759B3
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_iface.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 64B241948B4A11E17E998D241B918D2D
-- generatedChecksum: C420E11E0D4FD37C0179EBF82FBA7E29
+  userChecksum: EB8A484DE63DD14D6E96A05BC0E759B3
+- generatedChecksum: D655FD00126753A8ACF7BA8961A0F83D
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/jwt
   name: atca_jwt.c
   physicalPath: library/cryptoauthlib/jwt
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C420E11E0D4FD37C0179EBF82FBA7E29
+  userChecksum: D655FD00126753A8ACF7BA8961A0F83D
 - generatedChecksum: F41DD68794903B094FB89C320406C227
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/jwt
   name: atca_jwt.h
@@ -279,20 +279,6 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F41DD68794903B094FB89C320406C227
-- generatedChecksum: 020C76CD6D5D9555C514427B9B3EAC49
-  logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/hal
-  name: atca_start_config.h
-  physicalPath: library/cryptoauthlib/hal
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 020C76CD6D5D9555C514427B9B3EAC49
-- generatedChecksum: 020C76CD6D5D9555C514427B9B3EAC49
-  logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/hal
-  name: atca_start_iface.h
-  physicalPath: library/cryptoauthlib/hal
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 020C76CD6D5D9555C514427B9B3EAC49
 - generatedChecksum: C44F01BA65C6AC0A0BB2F1F257D2C405
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_status.h
@@ -307,13 +293,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9F6C09BA42D5F83B35F111C330A9131D
-- generatedChecksum: 947CA757AA4B0F3C275476AE1895FE80
+- generatedChecksum: 06124DB738A3AE73C8E53CA1A6907756
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib
   name: atca_version.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 947CA757AA4B0F3C275476AE1895FE80
+  userChecksum: 06124DB738A3AE73C8E53CA1A6907756
 - generatedChecksum: 39B479CDDBCD8CEB51C6FDAD2D5D6527
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert.h
@@ -335,13 +321,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 481CEFA6107D950DA2593A78494043C4
-- generatedChecksum: 76C166BE499C06C2DE08A30F4638F1FC
+- generatedChecksum: FACF788182ED6872C37F54136C671611
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_date.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 76C166BE499C06C2DE08A30F4638F1FC
+  userChecksum: FACF788182ED6872C37F54136C671611
 - generatedChecksum: 97BDFD21248DE60EA44A06564EB4A9E1
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_date.h
@@ -349,13 +335,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 97BDFD21248DE60EA44A06564EB4A9E1
-- generatedChecksum: 7EE1A85B7E90E04BAF4BCE9CD912FE79
+- generatedChecksum: 23B3121CC0EACB48AE299C4EFC430AEB
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_def.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7EE1A85B7E90E04BAF4BCE9CD912FE79
+  userChecksum: 23B3121CC0EACB48AE299C4EFC430AEB
 - generatedChecksum: 7E81275CEC5D18195AFAB0069751E90F
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_def.h
@@ -363,13 +349,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7E81275CEC5D18195AFAB0069751E90F
-- generatedChecksum: CA5248E40F9A4EA9DD0811D8670F1D08
+- generatedChecksum: 6B6E34A7BD2ED737583C14A8C3C474DB
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_der.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CA5248E40F9A4EA9DD0811D8670F1D08
+  userChecksum: 6B6E34A7BD2ED737583C14A8C3C474DB
 - generatedChecksum: 78E60FE1968E176C2FAAECFF28F15859
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_der.h
@@ -405,13 +391,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 938C9787ED5322AEC1364D6F77BAE706
-- generatedChecksum: 30F93CA4DB6FDE06690376D7A559CF32
+- generatedChecksum: C9282574F24F4342FFE533BB667D9103
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_pem.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 30F93CA4DB6FDE06690376D7A559CF32
+  userChecksum: C9282574F24F4342FFE533BB667D9103
 - generatedChecksum: DD048659E440B34428ED209F89C42D9D
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/atcacert
   name: atcacert_pem.h
@@ -426,13 +412,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D81A0A83EE6097AEEF8B8A524B921BBE
-- generatedChecksum: C9552CA702A3272DF9CD9A0CF3C614FD
+- generatedChecksum: 6C65A1A4857B51BBFD0B4C0D898D2C43
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_aes_gcm.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C9552CA702A3272DF9CD9A0CF3C614FD
+  userChecksum: 6C65A1A4857B51BBFD0B4C0D898D2C43
 - generatedChecksum: EA3115EBE1DA89D1E95D834CAD16F601
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_aes_gcm.h
@@ -440,20 +426,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: EA3115EBE1DA89D1E95D834CAD16F601
-- generatedChecksum: 17C3E3CE6F1AC0B48D6C9D41C5E78566
+- generatedChecksum: ACB17A8EC9DEA574B08091796F690A03
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_basic.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 17C3E3CE6F1AC0B48D6C9D41C5E78566
-- generatedChecksum: 7156C1F3443D8890E462C64568987FC8
+  userChecksum: ACB17A8EC9DEA574B08091796F690A03
+- generatedChecksum: 89AF7751A1190A3508FC8B0130D82824
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_basic.h
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7156C1F3443D8890E462C64568987FC8
+  userChecksum: 89AF7751A1190A3508FC8B0130D82824
 - generatedChecksum: A884DB08629E4695434C706C4230727C
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_checkmac.c
@@ -461,13 +447,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A884DB08629E4695434C706C4230727C
-- generatedChecksum: C30C4AA004D44E9B2A124C18A40F8F05
+- generatedChecksum: B9C2ACA1981DD40242F5DE61494A9DA6
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_command.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C30C4AA004D44E9B2A124C18A40F8F05
+  userChecksum: B9C2ACA1981DD40242F5DE61494A9DA6
 - generatedChecksum: C647A6D4029CC332EDFF5BFFB89654A8
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_command.h
@@ -475,13 +461,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C647A6D4029CC332EDFF5BFFB89654A8
-- generatedChecksum: A9A1B98EFECF32B7F93AE5B59BF8E0E8
+- generatedChecksum: 25C166411F3C2085D29ED53892EBA699
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_counter.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A9A1B98EFECF32B7F93AE5B59BF8E0E8
+  userChecksum: 25C166411F3C2085D29ED53892EBA699
 - generatedChecksum: 2A92914CEB45FEF801A142E1E2CAA5BA
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_derivekey.c
@@ -496,13 +482,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 037D62AB95DFF5D98575548E69E78319
-- generatedChecksum: 1A10BC6E4014369A490AC4EFC2656DF3
+- generatedChecksum: C1CF87E8CF2C13F5C34DBFBFAFFC7E5A
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_execution.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1A10BC6E4014369A490AC4EFC2656DF3
+  userChecksum: C1CF87E8CF2C13F5C34DBFBFAFFC7E5A
 - generatedChecksum: 88650BB1C64DF85297146DB38F4A9A22
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_execution.h
@@ -524,13 +510,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: BDC2785995C64F2543135A7495438421
-- generatedChecksum: 5A3969505B12EA66C633878A6140A2F5
+- generatedChecksum: 92EBC019E752DDF677D6009355774130
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_helpers.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5A3969505B12EA66C633878A6140A2F5
+  userChecksum: 92EBC019E752DDF677D6009355774130
 - generatedChecksum: 38EF4DCFFC7B15BD8C0764468CCF0F54
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_hmac.c
@@ -538,27 +524,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 38EF4DCFFC7B15BD8C0764468CCF0F54
-- generatedChecksum: E08ED9C0626D95B4E6BD954B3E57FF15
+- generatedChecksum: F9821758395246DCA4F13F68A19D8468
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_info.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E08ED9C0626D95B4E6BD954B3E57FF15
-- generatedChecksum: D3AEDA710B4B571020A6A1E93C7ACC94
+  userChecksum: F9821758395246DCA4F13F68A19D8468
+- generatedChecksum: 13197C0C3C9664FD455F684139AA3DB9
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_kdf.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D3AEDA710B4B571020A6A1E93C7ACC94
-- generatedChecksum: B44139417AF98919F0658FE2A01956CD
+  userChecksum: 13197C0C3C9664FD455F684139AA3DB9
+- generatedChecksum: F21072D5552F38182BF2CDACFA88D56C
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_lock.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B44139417AF98919F0658FE2A01956CD
+  userChecksum: F21072D5552F38182BF2CDACFA88D56C
 - generatedChecksum: 75047A7395A29787E1F153BC53111732
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_mac.c
@@ -587,13 +573,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E578C71AEB8AC9418FAFE9AF51E840E8
-- generatedChecksum: F4260F3FF15F1AFB6592EB57472B65E1
+- generatedChecksum: 1445CF8CA07C367FE208AE129D571B17
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_read.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F4260F3FF15F1AFB6592EB57472B65E1
+  userChecksum: 1445CF8CA07C367FE208AE129D571B17
 - generatedChecksum: EE3AF8F403379659507CE05FDC2FBA88
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_secureboot.c
@@ -608,20 +594,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 51138AB4EAFF12235CD3BAF8DF3C542C
-- generatedChecksum: C7A8282FFBF8BBAC54C1B46987DC8138
+- generatedChecksum: 1BDA7F4454FBEED306C258F612363366
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_sha.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C7A8282FFBF8BBAC54C1B46987DC8138
-- generatedChecksum: BA37AA9CBC843A8254A34A4BA4F0C19D
+  userChecksum: 1BDA7F4454FBEED306C258F612363366
+- generatedChecksum: E1B8B8CB923D5C236D231EEAD89899B4
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_sign.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BA37AA9CBC843A8254A34A4BA4F0C19D
+  userChecksum: E1B8B8CB923D5C236D231EEAD89899B4
 - generatedChecksum: B565C2FA644B9FB81FA673BD50D62D60
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_updateextra.c
@@ -636,13 +622,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5841CE8DED618FF5E886CC37F2DB47AF
-- generatedChecksum: 286701FEBEE8B665827FE2D0A2290910
+- generatedChecksum: 0D9A2C359776F1C94B4C84E9418577AA
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/calib
   name: calib_write.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 286701FEBEE8B665827FE2D0A2290910
+  userChecksum: 0D9A2C359776F1C94B4C84E9418577AA
 - generatedChecksum: 8ACE0DEBD82F6829438A4674565451FB
   logicalPath: FreeRTOS/Source
   name: croutine.c
@@ -685,6 +671,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B2E4EECC23A0B08DB18091355D20C5B1
+- generatedChecksum: F0F3ACCCC2C1C2FF47C3153B02D5A531
+  logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/hal
+  name: hal_gpio_harmony.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F0F3ACCCC2C1C2FF47C3153B02D5A531
 - generatedChecksum: 3459AC767423498DA8D92F144580EEC2
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/hal
   name: hal_harmony_init.c
@@ -713,13 +706,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1EA5B9CC1D496CDD236B90D730EF0C5A
-- generatedChecksum: 7A095F06670EA707960A97F7D070DCD2
+- generatedChecksum: 4B8B22FF300BCEFE46C96C0C4B2C594E
   logicalPath: config/pic32mzw1_Curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7A095F06670EA707960A97F7D070DCD2
+  userChecksum: 4B8B22FF300BCEFE46C96C0C4B2C594E
 - generatedChecksum: 1AFE5B2CC4AF1088A15F5F65E725E404
   logicalPath: config/pic32mzw1_Curiosity
   name: interrupts.c
@@ -755,13 +748,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8FDD6248506F28B32C4F5FD9AA0D9C6F
-- generatedChecksum: 9E20CB7EF026A19A73FF8EBAC59959E1
+- generatedChecksum: F70B972EDEA09405DC2EA4511983E9C3
   logicalPath: config/pic32mzw1_Curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9E20CB7EF026A19A73FF8EBAC59959E1
+  userChecksum: F70B972EDEA09405DC2EA4511983E9C3
 - generatedChecksum: 4C7911B93A1CCAA6153344FACF2D086F
   logicalPath: config/pic32mzw1_Curiosity/peripheral/evic
   name: plib_evic.c
@@ -790,6 +783,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 72BFBEF46060ABBF846FB7A3B2C667E4
+- generatedChecksum: 290251D6FF0845DC4259E0EF74DCB657
+  logicalPath: config/pic32mzw1_Curiosity
+  name: pmu_init.c
+  physicalPath: ''
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 290251D6FF0845DC4259E0EF74DCB657
 - generatedChecksum: C887913E7F045D65EF8FA7362D0DFDD8
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: port.c
@@ -825,20 +825,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 604A05C17479FC6839FB64A83B4F5C36
-- generatedChecksum: F8BB44C367E52E7A3A24643E786055A7
+- generatedChecksum: 6384F6E961B5C4D394D3872576E223A4
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto/hashes
   name: sha2_routines.c
   physicalPath: library/cryptoauthlib/crypto/hashes
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F8BB44C367E52E7A3A24643E786055A7
-- generatedChecksum: 03F315974E54C941C8B481677BAE592A
+  userChecksum: 6384F6E961B5C4D394D3872576E223A4
+- generatedChecksum: 91BA4A3E87D24FD2FA0F40652F9C4C9A
   logicalPath: config/pic32mzw1_Curiosity/library/cryptoauthlib/crypto/hashes
   name: sha2_routines.h
   physicalPath: library/cryptoauthlib/crypto/hashes
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 03F315974E54C941C8B481677BAE592A
+  userChecksum: 91BA4A3E87D24FD2FA0F40652F9C4C9A
 - generatedChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
   logicalPath: FreeRTOS/Source
   name: stream_buffer.c
@@ -846,13 +846,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
-- generatedChecksum: B272B2EB06FC4376B9EEB88671E27D74
+- generatedChecksum: 844B5535563F8399C03E2105085D14EB
   logicalPath: config/pic32mzw1_Curiosity/system/command
   name: sys_command.c
   physicalPath: system/command/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B272B2EB06FC4376B9EEB88671E27D74
+  userChecksum: 844B5535563F8399C03E2105085D14EB
 - generatedChecksum: 20C22A19D5DC74DEBFC4CCCA83B6F603
   logicalPath: config/pic32mzw1_Curiosity/system/console
   name: sys_console.c
@@ -902,13 +902,6 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 47B584985982B2FF32628D4CB874CB4D
-- generatedChecksum: 9A49A2339A0774ACCBC2178A9EE76586
-  logicalPath: config/pic32mzw1_Curiosity
-  name: system_pmu_mldo_trim.c
-  physicalPath: ''
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 9A49A2339A0774ACCBC2178A9EE76586
 - generatedChecksum: ACA409804689078D63BC5DD3C99DE8A0
   logicalPath: config/pic32mzw1_Curiosity
   name: tasks.c
@@ -1007,13 +1000,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
-- generatedChecksum: 2475A597674F39D9AB9F2D8D2033D1F0
+- generatedChecksum: 5A51808F325700FDC06296AF5EF968EE
   logicalPath: config/pic32mzw1_Curiosity
   name: FreeRTOSConfig.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2475A597674F39D9AB9F2D8D2033D1F0
+  userChecksum: 5A51808F325700FDC06296AF5EF968EE
 - generatedChecksum: 774011E09B9B257B4F572704E6AB9713
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: ISR_Support.h
@@ -1035,13 +1028,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 86F78F38AEE1000BC9CEE002561ADF7E
-- generatedChecksum: B9DBDFCB9289A1F9544B03B443621472
+- generatedChecksum: 457744A504282BBC0AA850120ACC562F
   logicalPath: config/pic32mzw1_Curiosity
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: B9DBDFCB9289A1F9544B03B443621472
+  userChecksum: 457744A504282BBC0AA850120ACC562F
 - generatedChecksum: 48B661D8C967C6BC397001F10FB43D1D
   logicalPath: FreeRTOS/Source/include
   name: croutine.h
@@ -1147,13 +1140,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9D6F205ECFDB2028C5CF766B52B5B7B2
-- generatedChecksum: 9238A3759A2C6748FE493370DE35B5E0
+- generatedChecksum: F4C7B8A950B1D12FF6EC959D0A996B5B
   logicalPath: config/pic32mzw1_Curiosity/peripheral/clk
   name: plib_clk.h
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9238A3759A2C6748FE493370DE35B5E0
+  userChecksum: F4C7B8A950B1D12FF6EC959D0A996B5B
 - generatedChecksum: 2B5072810107E051495C4B6379DEDA4E
   logicalPath: config/pic32mzw1_Curiosity/peripheral/evic
   name: plib_evic.h
@@ -1161,13 +1154,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2B5072810107E051495C4B6379DEDA4E
-- generatedChecksum: 3C52CEA231878411E3950ADD556AF20C
+- generatedChecksum: BFA90471A89ED563A27D8E3D12373D5E
   logicalPath: config/pic32mzw1_Curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3C52CEA231878411E3950ADD556AF20C
+  userChecksum: BFA90471A89ED563A27D8E3D12373D5E
 - generatedChecksum: 092C94C5559AFFB03C3483EE129E0E91
   logicalPath: config/pic32mzw1_Curiosity/peripheral/i2c/master
   name: plib_i2c2_master.h
@@ -1392,13 +1385,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: B82914256F44A8612BFB1CDF0ED5EEB0
-- generatedChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+- generatedChecksum: CAC44960D20AEC03CF4B325A1CD2877C
   logicalPath: config/pic32mzw1_Curiosity
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: FA212DEAE39D4E86EF4E6CB440610FE9
+  userChecksum: CAC44960D20AEC03CF4B325A1CD2877C
 - generatedChecksum: null
   logicalPath: config/pic32mzw1_Curiosity
   name: user.h
@@ -1406,13 +1399,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: null
-- generatedChecksum: 38B8D278EA69C81FF16A6EEA4989D1D1
+- generatedChecksum: C24B1DDDFF40F7DDFC8B469DD39FDEDE
   logicalPath: config/pic32mzw1_Curiosity
   name: p32MZ1025W104132.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 38B8D278EA69C81FF16A6EEA4989D1D1
+  userChecksum: C24B1DDDFF40F7DDFC8B469DD39FDEDE
 format_version: v1.0
 libraries: []
 settings:
@@ -1439,7 +1432,7 @@ settings:
   delimiter: ;
   key: extra-include-directories
   security: NON_SECURE
-  value: ../src;../src/config/pic32mzw1_Curiosity;../src/packs/PIC32MZ1025W104132_DFP;
+  value: ../src;../src/config/pic32mzw1_Curiosity;
 - append: false
   category: C32
   delimiter: ''
@@ -1487,7 +1480,7 @@ settings:
   delimiter: ;
   key: extra-include-directories
   security: NON_SECURE
-  value: ../src;../src/config/pic32mzw1_Curiosity;../src/packs/PIC32MZ1025W104132_DFP;
+  value: ../src;../src/config/pic32mzw1_Curiosity;
 - append: false
   category: C32CPP
   delimiter: ''
