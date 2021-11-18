@@ -1,3 +1,7 @@
+# Fetching device certificate
+
+Please refer to [readme_deviceCertificate.md](readme_deviceCertificate.md) for steps to fetch just the device certificate.
+
 # Generating Device Manifest File over UART for PIC32MZW1
 
 The WFI32E01 module on the curiosity board has an on-board TNG module. The primary security elements of the TNG can be extracted via UART by flashing the firmware present in this project. This includes the device certificate, public keys in different slots etc that are required to generate the device's manifest file by scripts in this folder. 
