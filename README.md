@@ -1,7 +1,11 @@
 # PIC32MZW1_UARTManifest
-Tool framework to extract manifest file from the TNGTLS device onboard a WFI32 module 
+Tool framework to extract device certificates and manifest file from the TNGTLS device onboard a WFI32 module 
 
+## Manifest genration 
 Read execution instructions at [scripts/manifestProcessing_uart/readme.md](scripts/manifestProcessing_uart/readme.md)
+
+## Device certificate 
+Read execution instructions at [scripts/manifestProcessing_uart/readme_deviceCertificate.md](scripts/manifestProcessing_uart/readme_deviceCertificate.md)
 
 
 ## What does the firmware do?
