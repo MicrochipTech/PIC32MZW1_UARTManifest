@@ -29,6 +29,7 @@ from cryptography.hazmat.primitives.serialization import Encoding, PublicFormat
 from cryptoauthlib import *
 from common import *
 from jose import utils
+import ssl
 
 from manifest_signing_helper import *
 
@@ -78,7 +79,9 @@ def tng_data(log_key_path='manifest_signer.key', log_cert_path='manifest_signer.
 
     root_cert_der = creds["rootCer"]
 
-    root_cert = x509.load_der_x509_certificate(root_cert_der, default_backend())
+    #workaround for an underlying issue in the crypto module
+    rootCert_PEM = ssl.DER_cert_to_PEM_cert(root_cert_der)
+    root_cert = x509.load_pem_x509_certificate(str.encode(rootCert_PEM), default_backend())
     certs.insert(0, root_cert)
 
     print(get_common_name(root_cert.subject))
@@ -125,8 +128,10 @@ def tng_data(log_key_path='manifest_signer.key', log_cert_path='manifest_signer.
     signer_cert_der_size = AtcaReference(0)
     
     signer_cert_der = creds["signerCer"]
-
-    signer_cert = x509.load_der_x509_certificate(signer_cert_der, default_backend())
+    
+    #workaround for an underlying issue in the crypto module
+    signerCert_PEM = ssl.DER_cert_to_PEM_cert(signer_cert_der)
+    signer_cert = x509.load_pem_x509_certificate(str.encode(signerCert_PEM), default_backend())
     certs.insert(0, signer_cert)
 
     print(get_common_name(signer_cert.subject))
@@ -176,8 +181,9 @@ def tng_data(log_key_path='manifest_signer.key', log_cert_path='manifest_signer.
     device_cert_der_size = AtcaReference(0)
     
     device_cert_der = creds["devCer"]
-
-    device_cert = x509.load_der_x509_certificate(device_cert_der, default_backend())
+    #workaround for an underlying issue in the crypto module
+    deviceCert_PEM = ssl.DER_cert_to_PEM_cert(device_cert_der)
+    device_cert = x509.load_pem_x509_certificate(str.encode(deviceCert_PEM), default_backend())
     certs.insert(0, device_cert)
 
     print(get_common_name(device_cert.subject))
